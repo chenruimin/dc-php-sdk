@@ -2,12 +2,17 @@
 
 namespace DataCue;
 
+use DataCue\Modules\Product;
+use DataCue\Modules\User;
+use DataCue\Modules\Order;
+use DataCue\Modules\Event;
+
 class Client
 {
     private static $modules = [
-        'products' => \DataCue\Modules\Product::class,
-        'users' => \DataCue\Modules\User::class,
-        'orders' => \DataCue\Modules\Order::class,
+        'products' => Product::class,
+        'users' => User::class,
+        'orders' => Order::class,
         'events' => Event::class,
     ];
 

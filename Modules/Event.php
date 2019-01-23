@@ -1,8 +1,8 @@
 <?php
 
-namespace DataCue;
+namespace DataCue\Modules;
 
-class Event
+class Event extends Base
 {
     public function track($userData, $eventData, $context = null, $timestamp = null) {
 
